@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Formulário de Comissão de Vendas</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <form id="commission-form" method="post" action="http://localhost:5000/submit-form">
+        <div id="commercials">
+            <div class="commercial">
+                <div id="labels">
+                    <label for="email-0">Participante</label>
+                    <label for="percentage-0">Percentual</label>
+                </div>
+                <input id="Participante" type="email" name="email" required>
+                <input type="number" max="100" accuracy="2" min="0" id="Percentual" name="percentage">
+            </div>
+        </div>
+        <div id="buttons">
+            <button id="addRow" type="button">+ Adicionar Participante</button>
+            <button id="save" type="submit">Salvar</button>
+        </div>
+    </form>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
